@@ -9,7 +9,8 @@ model = pickle.load(open('LR2_pk.pkl','rb'))
 def main():
      
   st.markdown('<div style="text-align: center;">
-  st.image("http://www.pngmart.com/files/3/Health-PNG-File.png",width=100) </div>', unsafe_allow_html=True)
+  st.image("http://www.pngmart.com/files/3/Health-PNG-File.png",width=100) 
+  </div>')
       
   st.title("Stroke Risk Prediction")
   
