@@ -17,7 +17,7 @@ def main():
   hypertension = st.slider("Input if you have hypertension, 0 if no and 1 if yes",0,1)
   heartdisease = st.slider("Input if you have heart disease, 0 if no and 1 if yes",0,1)
   ever_married=st.slider('Input your marriage status,0 if no and 1 if yes',0,1)
-  work_type= st.select_slider('Input the type of work you do,2 if Private,3 if Self-employed,0 if Govt_job,4 if children,1 if Never_worked',(2,3,0,4,1))
+  work_type= st.selectbox('Input the type of work you do,2 if Private,3 if Self-employed,0 if Govt_job,4 if children,1 if Never_worked',(2,3,0,4,1))
   sugar=st.number_input("Input your average glucose level", min_value=None, max_value=None)
   bmi=st.number_input("Input your BMI", min_value=None, max_value=None)
   smoking_status=st.select_slider('Input your smoking status ',options=[0,1,2,3])
