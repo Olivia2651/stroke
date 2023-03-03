@@ -28,10 +28,10 @@ def main():
      if st.button('Predict'):
           result = model.predict(inputs)
           updated_res = result.flatten().astype(int)
-    if  updated_res ==0:
-          st.write("Not very probable you will have a stroke soon")
-    else:
-          st.write("It is probable you might have a stroke soon therefore you should see your doctor")
+          if  updated_res ==0:
+               st.write("Not very probable you will have a stroke soon")
+          else:
+               st.write("It is probable you might have a stroke soon therefore you should see your doctor")
 
 
 if __name__=='__main__':
