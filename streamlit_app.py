@@ -11,15 +11,15 @@ def main():
   
   st.sidebar.header("This is a web app that tells you the predicted wether you will have a stroke or not")
   
-  st.header("Just fill in the information")
+  st.subheader("Just fill in the information")
   age = st.slider("Input your age:",0,100)
-  hypertension = st.slider("Input if you have hypertension, 0 if no and 1 if yes",0,1)
-  heartdisease = st.slider("Input if you have heart disease, 0 if no and 1 if yes",0,1)
-  ever_married=st.slider('Input your marriage status,0 if no and 1 if yes',0,1)
-  work_type= st.selectbox('Input the type of work you do,2 if Private,3 if Self-employed,0 if Govt_job,4 if children,1 if Never_worked',(2,3,0,4,1))
+  hypertension = st.slider("Input if you have hypertension.\n 0 if no and 1 if yes",0,1)
+  heartdisease = st.slider("Input if you have heart disease.\n 0 if no and 1 if yes",0,1)
+  ever_married=st.slider('Input your marriage status.\n0 if no and 1 if yes',0,1)
+  work_type= st.selectbox('Input the type of work you do.\n2 if Private,3 if Self-employed,0 if Govt_job,4 if children,1 if Never_worked',(2,3,0,4,1))
   sugar=st.number_input("Input your average glucose level", min_value=None, max_value=None)
   bmi=st.number_input("Input your BMI", min_value=None, max_value=None)
-  smoking_status=st.selectbox('Input your smoking status 1 is formerly smoked,2 is never smoked,3 is smokes,0 is Unknown' ,(1,2,3,0))
+  smoking_status=st.selectbox('Input your smoking status.\n 1 is formerly smoked,2 is never smoked,3 is smokes,0 is Unknown' ,(1,2,3,0))
   
 
   inputs=[[age,hypertension,heartdisease,ever_married,work_type,sugar,bmi,smoking_status]]
