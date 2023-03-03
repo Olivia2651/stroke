@@ -7,7 +7,7 @@ model = pickle.load(open('LR2_pk.pkl','rb'))
 
 def main():
      with st.columns(3)[1]:
-          st.image("http://www.pngmart.com/files/3/Health-PNG-File.png",width=100) 
+          st.image("http://www.pngmart.com/files/3/Health-PNG-File.png",width=200) 
           st.title("Stroke Risk Prediction")
   
      st.sidebar.header("This is a web app that tells you the predicted wether you will have a stroke or not.")
