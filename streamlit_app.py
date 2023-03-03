@@ -7,12 +7,11 @@ model = pickle.load(open('LR2_pk.pkl','rb'))
 
 
 def main():
-  st.sidebar.header("Stroke Risk Prediction")
+  st.title("Stroke Risk Prediction")
+  
   st.sidebar.header("This is a web app that tells you the predicted wether you will have a stroke or not")
-
   
-  
-  st.sidebar.header("Just fill in the information")
+  st.header("Just fill in the information")
   age = st.slider("Input your age:",0,100)
   hypertension = st.slider("Input if you have hypertension, 0 if no and 1 if yes",0,1)
   heartdisease = st.slider("Input if you have heart disease, 0 if no and 1 if yes",0,1)
